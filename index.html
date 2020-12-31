@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>2021跨年直播</title>
 </head>
+<body onload="myFunction()">
 <body align="center">
 	<h2 style="color:red;"><div align="center" class="time_display" id="t2021"></div></h2>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/jtKI7kNmJPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
@@ -18,16 +19,18 @@
 
 	<div align="center">© POWERED BY DABO 2020 </div>
 	<script>
-			var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
-			var x = setInterval(timer, 1000);
+		function myFunction() {
+			alert("歡迎來到2021跨年直播一覽，本網站建議使用電腦觀賞\n若頁面無法容納所有影片視窗，請嘗試縮小視窗或使用全螢幕(F11)\n使用方法：\n將9個直播畫面點開並靜音，將欲觀賞的畫面解除靜音\n才不會錯過喜歡的藝人喔！\n最後，祝大家新年快樂！");}	
+		var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+		var x = setInterval(timer, 1000);
 			  
-			function timer() {
-				var now = new Date().getTime();
-				var distance = countDownDate - now;
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		function timer() {
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         if (hours < 10){
           hours = "0" + hours;
         }
@@ -43,6 +46,6 @@
 					document.getElementById("t2021").innerHTML = "🎉 2021 新年快樂🎉";
 				}
 			}
-			</script>
+	</script>
 </body>
 </html>
