@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2021跨年直播</title>
+</head>
+<body align="center">
+	<h2 style="color:red;"><div align="center" class="time_display" id="t2021"></div></h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/jtKI7kNmJPI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/PzVtWcatDQY?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/u6Nr9Ur0wkU?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/sE21fScYf6M?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/5niAcdqhUxQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/2dPIgwzeLM4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/989D68vnqYg?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Ej9Mqkc2I5g?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/F0UTkjBnuYI?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<div align="center">© POWERED BY DABO 2020 </div>
+	<script>
+			var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+			var x = setInterval(timer, 1000);
+			  
+			function timer() {
+				var now = new Date().getTime();
+				var distance = countDownDate - now;
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        if (hours < 10){
+          hours = "0" + hours;
+        }
+        if (minutes < 10){
+          minutes = "0" + minutes;
+        }
+        if (seconds < 10){
+          seconds = "0" + seconds;
+        }
+				document.getElementById("t2021").innerHTML = "距離 2021 還有 " + days + "天 " + hours + "時   " + minutes + "分   " + seconds + "秒";
+			  if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("t2021").innerHTML = "🎉 2021 新年快樂🎉";
+				}
+			}
+			</script>
+</body>
+</html>
